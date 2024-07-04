@@ -3,6 +3,8 @@
 
     --main-text: #169fed;
     --dark-text: #000;
+    --dark-bg: white;
+    --dark-bg2: white;
     --light-text: #fff;
     --muted-text: #6c757d;
 
@@ -26,6 +28,8 @@
 
     --main-text: #169fed;
     --dark-text: #fff;
+    --dark-bg: black;
+    --dark-bg2: #242525;
     --light-text: #000;
     --muted-text: #e4e4e4;
 
@@ -130,7 +134,15 @@ input{
 .bg-dark2 {
     background-color: black;
 }
-
+.bg-dark3{
+    background-color: var(--dark-bg);
+}
+.bg-dark4{
+    background-color: var(--dark-bg2);
+}
+.bg-dark5{
+    background-color: var(--dark-text);
+}
 .bg-black-blur {
     background-color: #000000a1;
 }
@@ -185,6 +197,12 @@ input{
 }
 .text-dark {
   color: var(--dark-text)!important;
+}
+.text-dark4{
+    color: black;
+}
+.fill-white{
+    fill: var(--light-text);
 }
 /* cursor */
 .cursor {
@@ -1425,7 +1443,10 @@ header {
     z-index: 99;
     font-size: 14px;
 }
-
+header.active{
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--light-text);
+}
 header #menuOverlay {
     display: none;
 }
@@ -1844,11 +1865,11 @@ footer ul a p {
     transition: all .4s;
 }
 
-footer ul a:hover {
+footer .row ul a:hover {
     color: #ef720c !important;
 }
 
-footer ul a:hover p {
+footer .row ul a:hover p {
     color: #ef720c !important;
     padding-right: 7px;
 }

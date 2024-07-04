@@ -36,11 +36,9 @@ dropdownBtn.addEventListener('click',function () {
 // scroll event
 window.addEventListener('scroll',()=>{
   if (window.scrollY>40) {
-    document.querySelector('header').style.backgroundColor='white';
-    document.querySelector('header').style.boxShadow=' 0 0 50px 0 rgba(0, 0, 0, 0.1)'
+    document.querySelector('header').classList.add('active');
   } else {
-    document.querySelector('header').style.backgroundColor='transparent';
-    document.querySelector('header').style.boxShadow='none'
+    document.querySelector('header').classList.remove('active');
   }
 })
 // fancybox
