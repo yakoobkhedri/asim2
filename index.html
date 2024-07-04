@@ -4,6 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+
+    let localS = localStorage.getItem('theme'),
+        themeToSet = localS;
+
+    if(!localS){
+      themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    document.documentElement.setAttribute('data-theme', themeToSet);
+
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="assets/css/swiper.min.css">
@@ -696,7 +710,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <p class="text-muted">کاردیولوژی</p>
+                    <p class="text-muted2">کاردیولوژی</p>
                     <a class="fs-24 font-bold mb-0 text-dark hover-main">سارا جکسون</a>
                   </div>
                 </div>
@@ -752,7 +766,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <p class="text-muted">کاردیولوژی</p>
+                    <p class="text-muted2">کاردیولوژی</p>
                     <a class="fs-24 font-bold mb-0 text-dark hover-main">دیوید تیلور</a>
                   </div>
                 </div>
@@ -808,7 +822,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <p class="text-muted">کاردیولوژی</p>
+                    <p class="text-muted2">کاردیولوژی</p>
                     <a class="fs-24 font-bold mb-0 text-dark hover-main">سارا جکسون</a>
                   </div>
                 </div>
@@ -864,7 +878,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <p class="text-muted">کاردیولوژی</p>
+                    <p class="text-muted2">کاردیولوژی</p>
                     <a class="fs-24 font-bold mb-0 text-dark hover-main">دیوید تیلور</a>
                   </div>
                 </div>

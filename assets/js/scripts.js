@@ -150,6 +150,8 @@ const switchTheme = ()=>{
      newTheme= (dataTheme === 'light') ? 'dark' : 'light';
 
      routeElm.setAttribute('data-theme', newTheme);
+
+     localStorage.setItem('theme', newTheme)
 }
 
 document.querySelector('#theme-switcher').addEventListener('click', switchTheme);

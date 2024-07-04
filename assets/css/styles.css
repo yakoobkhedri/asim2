@@ -12,7 +12,7 @@
     --button-text: var(--light-text);
     --button-text-hover: var(--light-text);
 
-    --switch-bg: #f5f5f6;
+    --switch-bg: #169fed;
     --switch-circle-bg: #ffd371;
     --switch-circle-pos: -0.26rem;
     --icon-sun: var(--muted-text);
@@ -60,8 +60,11 @@ body {
     overflow-x: hidden;
     background-color: var(--page-bg);
     transition: all .4s;
+    color: var(--dark-text);
 }
-
+*{
+    transition: all .4s;
+}
 a {
     text-decoration: none !important;
 }
@@ -176,7 +179,9 @@ input{
 .text-success2 {
     color: #16ed8f;
 }
-
+.text-dark {
+  color: var(--dark-text)!important;
+}
 /* cursor */
 .cursor {
     cursor: pointer;
