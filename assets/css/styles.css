@@ -1,3 +1,19 @@
+:root{
+    --page-bg: #fff;
+
+    --main-text: #169fed;
+    --muted-text: #6c757d;
+
+    --input-text:#000;
+    --input-placeholder: #92999e;
+
+    --button-text: #fff;
+    --button-text-hover: #fff;
+
+    --icon-socials: var(--main-text);
+    --icon-socials-hover: #fff;
+}
+
 @font-face {
     font-family: "IRANYekan-Regular";
     src: url('../fonts/IRANYekanXFaNum-Regular.woff') format("woff");
@@ -17,7 +33,9 @@ body {
 a {
     text-decoration: none !important;
 }
-
+input{
+    background-color: transparent;
+}
 .font-bold {
     font-family: "IRANYekan-Bold";
 }
@@ -28,7 +46,7 @@ a {
 }
 
 .bg-main {
-    background-color: #169fed;
+    background-color: var(--main-text);
 }
 
 .bg-main2 {
@@ -104,7 +122,7 @@ a {
 
 /* text color */
 .text-main {
-    color: #169fed;
+    color: var(--main-text);
 }
 
 .text-main2 {
@@ -895,8 +913,8 @@ a {
 
 /* form check */
 .form-check-input:checked {
-    background-color: #169fed;
-    border-color: #169fed;
+    background-color: var(--main-text);
+    border-color: var(--main-text);
 }
 
 /* active */
@@ -931,7 +949,7 @@ a {
 }
 
 .socials a:hover {
-    background-color: #169fed !important;
+    background-color: var(--main-text) !important;
     color: white;
     transform: translateY(-8px) !important;
 }
@@ -948,7 +966,7 @@ a {
 }
 
 .phone-hover:hover p {
-    color: #169fed !important;
+    color: var(--main-text) !important;
 }
 
 .phone-hover:hover svg {
@@ -956,8 +974,8 @@ a {
 }
 
 .phone-hover:hover div {
-    background-color: #169fed;
-    border: 1px solid #169fed !important;
+    background-color: var(--main-text);
+    border: 1px solid var(--main-text) !important;
 }
 
 .right-hover:hover {
@@ -994,7 +1012,7 @@ textarea:focus {
     width: 550px;
     height: 550px;
     margin: auto;
-    background: #169fed;
+    background: var(--main-text);
     border-radius: 50%;
     transform-origin: top center;
     transform: translateX(-50%) translateY(-5%) scale(0.4);
@@ -1048,7 +1066,7 @@ textarea:focus {
 }
 
 .main-hover:hover {
-    background-color: #169fed !important;
+    background-color: var(--main-text) !important;
     color: white;
 }
 
@@ -1057,12 +1075,12 @@ textarea:focus {
 }
 
 .hover-main:hover {
-    color: #169fed !important;
+    color: var(--main-text) !important;
 }
 
 .hover-main2:hover,
 .hover-main2.active {
-    background-color: #169fed !important;
+    background-color: var(--main-text) !important;
     color: white !important;
 }
 
@@ -1371,7 +1389,7 @@ header a {
 header a:hover,
 header a.active,
 .teamSocials a:hover {
-    color: #169fed !important;
+    color: var(--main-text) !important;
 }
 
 header ul>li.h-lg-auto>a {
@@ -1385,7 +1403,7 @@ header ul>li.h-lg-auto>a::after {
     right: 0;
     width: 0;
     height: 1px;
-    background-color: #169fed;
+    background-color: var(--main-text);
     transition: all ease 0.5s;
     left: 0;
     right: auto;
@@ -1490,7 +1508,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .solutionCard:hover a {
-    color: #169fed !important;
+    color: var(--main-text) !important;
 }
 
 @keyframes shake {
@@ -1577,7 +1595,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .serviceCard:hover a {
-    color: #169fed !important;
+    color: var(--main-text) !important;
 }
 
 .serviceCard:hover a:last-child {
@@ -1681,7 +1699,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .blogCard:hover a {
-    color: #169fed !important;
+    color: var(--main-text) !important;
 }
 
 .blogCard:hover a:last-child {
@@ -1758,7 +1776,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .swiper-pagination-bullet-active,
 .swiper-pagination3 .swiper-pagination-bullet-active {
     width: 30px;
-    background-color: #169fed;
+    background-color: var(--main-text);
 }
 
 /* footer */
@@ -1790,7 +1808,7 @@ footer ul a:hover p {
   bottom: -100px;
   right: 20px;
   color: var(--white-color);
-  background-color: #169fed;
+  background-color: var(--main-text);
   z-index: 4;
   width: 45px;
   text-align: center;
@@ -1890,7 +1908,7 @@ footer ul a:hover p {
 
     header a:hover,
     header a.active {
-        color: #169fed !important;
+        color: var(--main-text) !important;
     }
 
     header .menu>li {
