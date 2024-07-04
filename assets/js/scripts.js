@@ -175,7 +175,7 @@ let parallexBox = document.getElementById('parallexBox');
 let parallexContent = document.querySelector('#parallexBox > div');
 let sliderWidth=parallexBox.offsetWidth;
 let sliderHeight=parallexBox.offsetHeight;
-let sliderContentMovement=60;
+let sliderContentMovement=20;
 
 let parallexBox2 = document.getElementById('parallexBox2');
 let parallexContent2 = document.querySelector('#parallexBox2 > div');
