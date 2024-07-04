@@ -140,6 +140,20 @@ window.addEventListener('scroll',()=>{
   }
 })
 
+// dark mode
+
+const switchTheme = ()=>{
+ const routeElm = document.documentElement;
+ let dataTheme = routeElm.getAttribute('data-theme'),
+     newTheme;
+
+     newTheme= (dataTheme === 'light') ? 'dark' : 'light';
+
+     routeElm.setAttribute('data-theme', newTheme);
+}
+
+document.querySelector('#theme-switcher').addEventListener('click', switchTheme);
+
 // select 2
 
 $( '#basic-usage' ).select2( {
